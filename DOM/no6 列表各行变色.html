@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title> 列表各行变色</title>
+		<style>
+
+			ul{margin :0px;padding :0px;width :800px;margin :0 auto ;list-style-type :none ;}
+        ul li{width :800px;height :35px;line-height :35px;font-size :14px;border-bottom :1px dashed #dbdbdb;}
+
+    </style>
+	</head>
+	<body>
+
+		<ul id="uu">
+			<li>列表各行变色</li>
+			<li>列表各行变色</li>
+			<li>列表各行变色</li>
+			<li>列表各行变色</li>
+			<li>列表各行变色</li>
+		</ul>
+		<hr />
+		<ul>
+			<li>列表各行变色</li>
+			<li>列表各行变色</li>
+			<li>列表各行变色</li>
+			<li>列表各行变色</li>
+			<li>列表各行变色</li>
+		</ul>
+
+		<input type="button" value="确定" id="btn" />
+
+
+
+		<script>
+			// document.getElementById("btn").onclick = function () {
+
+			//     var arr = document.getElementById("uu").getElementsByTagName("li");
+			//     for (var i = 0; i < arr.length; i++) {
+
+			//         if (i % 2 == 0) {
+
+			//             arr[i].style.backgroundColor = "red";
+			//         }
+
+			//     }
+
+			// }
+
+			document.getElementById("btn").onclick = function() {
+				var arr = document.getElementById("uu").getElementsByTagName("li")
+				for (var i = 0; i < arr.length; i++) {
+					if (i%2 !== 0){
+						arr[i].style.backgroundColor = "red";
+					}
+				}
+
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>创建元素</title>
+    <style>
+        ul{margin :0px;padding :0px;list-style-type:none;}
+        ul li{line-height:40px;}
+
+    </style>
+</head>
+<body>
+    <div id="dv">
+        <p>1111</p>
+        <span>222</span>
+    </div>
+    <div id="img">
+    </div>
+
+    <div id="uu">
+
+
+    </div>
+
+    <input type="button" value="点击" id="btn" />
+
+
+
+    <script>
+        //创建元素第一种方式  document.write("<p>Hello Word</p>")        
+
+
+        //document.getElementById("btn").onclick = function () {
+
+        //    document.write("<p>Hello Word</p>")
+
+        //}
+
+        //创建元素第二种方式
+        //document.getElementById("btn").onclick = function () {
+
+        //    //document.getElementById("dv").innerHTML="<p>哈哈</p>"
+
+        //    //点击按钮创建图片
+
+        //    //document.getElementById("img").innerHTML="<img src=images/banner.jpg/>"
+
+        //}
+
+
+        var arr = ["新闻标题1", "新闻标题2", "新闻标题3", "新闻标题4", "新闻标题5", "新闻标题6"];
+
+        document.getElementById("btn").onclick = function () {
+
+            var str = "<ul>";
+            for (var i = 0; i < arr.length; i++) {
+
+                str = str + "<li>" + arr[i] + "</li>";
+            }
+            str = str + "</ul>";
+            document.getElementById("uu").innerHTML = str;
+
+        }
+
+
+
+    </script>
+</body>
+</html>

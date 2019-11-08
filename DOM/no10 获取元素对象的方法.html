@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>获取元素对象的方法</title>
+    <style>
+        input{display:block ;margin :0 auto ;margin-top:30px;}
+        .main{}
+
+        #main{}
+        .content{}
+
+    </style>
+</head>
+<body>
+    <!--<input type="text" name="t1" value="1"/>
+    <input type="text" name="t2"value="2" />
+    <input type="text" name="t3"value="3" />
+    <input type="text" name="t2" value="4"/>
+    <input type="text" name="t1" value="5"/>
+    <input type="button" value="点击" id="btn" />-->
+
+
+    <!--<div class="main">11</div>
+    <div class="main">22</div>
+    <div class="main">33</div>
+    <div class="main">44</div>-->
+
+
+     <div id="main">11</div>
+
+     <div class="content">22</div>
+     <div class="content">33</div>
+
+
+
+    <input type="button" value="点击" id="btn" />
+
+
+
+
+    <script>
+        //1、getElementById("id名称")
+        //2、getElementsByTagName("标签的名字")
+        //3、getElementsByName（"name属性"）
+        //4、getElementsByClassName("类的名称")
+        //5、querySelector("#main")
+        //6、querySelectorAll(".content")
+
+
+        //document.getElementById("btn").onclick = function () {
+        //    var arr = document.getElementsByName("t1");
+        //    for (var i = 0; i < arr.length; i++) {
+        //        arr[i].value="哈哈，我的值修改了"
+
+        //    }
+
+
+        //}
+
+
+
+        //document.getElementById("btn").onclick = function () {
+
+        //    var arr = document.getElementsByClassName("main");
+        //    for (var i = 0; i < arr.length; i++) {
+
+        //        arr[i].style.width = "200px";
+        //        arr[i].style.height = "200px";
+        //        arr[i].style.backgroundColor = "red";
+        //        arr[i].style.marginTop = "20px";
+        //    }
+
+        //}
+
+
+
+        document.getElementById("btn").onclick = function () {
+
+            //var obj = document.querySelector("#main");
+            //obj.style.width = "300px";
+            //obj.style.height = "500px";
+            //obj.style.backgroundColor = "#333";
+
+
+            var arr = document.querySelectorAll(".content");
+            for (var i = 0; i < arr.length; i++) {
+                arr[i].style.width = "400px";
+                arr[i].style.height = "400px";
+                arr[i].style.backgroundColor = "red";
+                arr[i].style.marginTop = "20px";
+
+            }
+
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>

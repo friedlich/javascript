@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>节点案例</title>
+    <style>
+
+
+        ul{margin :0px;padding :0px;list-style-type :none ;width :500px;margin :0 auto ;margin-top :100px;}
+
+        ul li{line-height :35px;border-bottom :1px solid #dedede;}
+
+    </style>
+</head>
+<body>
+     <!--<div id="dv">   
+        <p id="p1">11</p>
+        <span>22</span>
+        <ul>
+            <li>33</li>
+            <li>44</li>
+            <li>55</li>
+        </ul>
+    </div>-->
+
+    <ul id="uu">
+         <li>111</li>
+         <li>22</li>
+         <li>11331</li>
+         <li>44</li>
+         <li>11551</li>
+         <li>11661</li>
+         <li>11771</li>
+
+
+    </ul>
+    <input type="button" value ="点击"  id="btn"/>
+
+    <script>
+
+        document.getElementById("btn").onclick = function () {
+            var arr = document.getElementById("uu").children;
+            for (var i = 0; i < arr.length; i++) {
+                if (i % 2 !== 0) {
+                    arr[i].style.backgroundColor = "red";
+                }           
+            
+            }
+
+        }
+
+
+
+
+
+        //var arr = document.getElementById("dv").childNodes;
+        //for (var i = 0; i < arr.length; i++) {
+
+        //    var node=arr[i]
+
+        //    console.log("节点的类型:"+node.nodeType+"---节点的名字:"+node.nodeName+"---节点的值:"+node.nodeValue)
+
+        //}
+
+
+
+    </script>
+
+</body>
+</html>

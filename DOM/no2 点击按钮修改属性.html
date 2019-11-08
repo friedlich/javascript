@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>点击按钮修改属性</title>
+
+		<style>
+
+			.main{width:500px;height :500px;background:red;margin :0 auto ;color:#fff;font-size:30px;text-align :center ;line-height :500px;}
+
+    </style>
+
+	</head>
+	<body>
+		<div id="dv">
+			11
+		</div>
+
+		<input type="button" value="更换按钮文字" id="btn1"/>
+		<input type="button" value="更换div标签样式" id="btn2" />
+
+		<img src="images/banner.jpg" id="img" />
+
+
+		<script>
+			// document.getElementById("btn").onclick = function() {
+
+			// 	this.value = "确定"
+
+			// }
+			document.getElementById("btn1").onclick = function(){
+				this.value = "确定"
+			}
+
+			// var obj = document.getElementById("img");
+			// obj.onclick = function() { // 这一步是用来注册点击事件的
+			// 	this.width = "300";
+			// 	this.height = "300";
+			// }
+			
+			var img = document.getElementById("img");
+			img.onclick = function(){
+				this.width = "300";
+				this.height = "300";
+			}
+			
+			// var obj = document.getElementById("btn");
+			// obj.onclick = function() {
+			// 	var objDv = document.getElementById("dv");
+			// 	// objDv.style.width = "500px";
+			// 	// objDv.style.height = "800px";
+			// 	// objDv.style.backgroundColor = "#000";
+			// 	//     //第二种方法
+			// 	objDv.className = "main";
+			// }
+			
+			var obj = document.getElementById("btn2");
+			obj.onclick = function(){
+				obj2 = document.getElementById("dv")
+				// obj2.style.width = "500px";
+				// obj2.style.height = "800px";
+				// obj2.style.backgroundColor = "#000000"
+				obj2.className = "main"
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title> 根据元素id获取元素对象</title>
+
+	</head>
+	<body>
+		<div id="dv">
+			javascript
+		</div>
+		<div id="数字">
+			11111
+		</div>
+		<div>
+			22222
+		</div>
+		<div>
+			33333
+		</div>
+
+		<input type="button" value="点我" id="btn" />
+		<input type="button" value="单行文字" id="btn2" />
+		<input type="button" value="图片" id="btn3" />
+		<input type="button" value="多行文字" id="btn4" />
+
+		<img src="" id="img" />
+
+		<script>
+			// 点击按钮设置div里面的文本内容
+
+			document.getElementById("btn").onclick = function() {
+				var obj = document.getElementById("dv");
+				obj.innerText = "秘密花园"
+			}
+			
+			document.getElementById("btn2").onclick = function() {
+				var obj2 = document.getElementById("数字");
+				obj2.innerText = "666"
+			}
+
+			document.getElementById("btn3").onclick = function() {
+				var obj3 = document.getElementById("img");
+				obj3.src = "images/banner.jpg";
+			}
+
+			// 使用标签名字获取元素对象
+			// getElementsByTagName 返回的是一个数组对象
+
+			document.getElementById("btn4").onclick = function() {
+				var arr = document.getElementsByTagName("div");
+				console.log(arr);
+				for (var i = 0; i < arr.length; i++) {
+					arr[i].innerText = "全部改变"
+				}
+			}
+		</script>
+	</body>
+</html>

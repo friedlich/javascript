@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>DOM模块</title>
+    <script>
+        //文档
+        //HTML页面就是文档 document
+        
+        //节点
+        //html页面里的元素、文本、属性都属于节点
+
+        //元素
+        //html里面的标签就叫做元素
+
+    </script>
+
+</head>
+<body>
+
+    <input type="button" value="确定" id="btn" />
+	<input type="button" value="点击么" id="btn2" />
+
+
+    <script>
+        //function f1() {
+        //    alert("Hello")
+
+        //}
+
+        var btnClick = document.getElementById("btn");
+        btnClick.onclick = function () {
+            alert("javascript秘密花园");
+        }
+		
+		var btn2Click = document.getElementById("btn2");
+		btn2Click.onclick = function(){
+			alert("今天可能又是糟糕的一天")
+		}
+
+    </script>
+</body>
+</html>

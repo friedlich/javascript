@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title> div边框高亮显示</title>
+		<style>
+			.mian {
+				width: 200px;
+				height: 200px;
+				float: left;
+				border: 1px solid #ccc;
+				margin-left: 20px;
+				margin-top: 20px;
+				text-align: center;
+				line-height: 200px;
+				font-size: 19px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mian">
+			111
+		</div>
+
+		<div class="mian">
+			22
+		</div>
+
+		<div class="mian">
+			33
+		</div>
+
+		<div class="mian">
+			44
+		</div>
+
+		<div class="mian">
+			55
+		</div>
+
+		<script>
+			// var arr = document.getElementsByTagName("div");
+			// for (var i = 0; i < arr.length; i++) {
+			//     arr[i].onmouseover = function () {
+			//         this.style.border = "1px solid red";
+
+			//     }
+
+			//     arr[i].onmouseout = function () {
+			//         this.style.border = "";
+
+			//     }
+
+			// }
+
+			var arr = document.getElementsByTagName("div");
+			for (var i = 0; i < arr.length; i++) {
+				arr[i].onmouseover = function() {
+					this.style.border = "1px solid red";
+				}			
+				arr[i].onmouseout = function(){
+					this.style.border = "";
+				}
+			}
+		</script>
+	</body>
+</html>

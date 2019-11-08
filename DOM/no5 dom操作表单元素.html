@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>dom操作表单元素</title>
+	</head>
+	<body style="text-align:center;padding-top:100px;font-size:30px;">
+		<!-- <input type="text" id="t1" /> -->
+		<!-- <input type="text" id="t1" /> -->
+		<!-- <input type="button" value="点击" id="btn" /> -->
+
+		<a href="http://www.mm2018.com/" id="a1">素材特效</a>
+
+
+		<script>
+			//点击按钮禁止使用文本框
+			//document.getElementById("btn").onclick = function () {
+
+			//    document.getElementById("t1").disabled = true;
+
+			//}
+
+			// document.getElementById("btn").onclick = function(){
+			// 	document.getElementById("t1").disabled = true;
+			// }
+
+			//点击超链接禁止跳转页面
+			// document.getElementById("a1").onclick = function() {
+			// 	return false;
+			// }
+			
+			document.getElementById("a1").onclick = function () {
+				alert("进不去");
+				return false;
+			}
+		</script>
+	</body>
+</html>

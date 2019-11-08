@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>属性</title>
+    <style>
+
+        .main{background:red}
+
+        #content{background:#000;color :#fff;padding:10px;}
+
+    </style>
+
+</head>
+<body>
+    <div>11</div>
+    <div >22</div>
+    <div>33</div>
+    <input type="button" value="点击" id="btn"/>
+    
+
+
+
+
+
+    <script>
+        //设置属性的方法 setAttribute("属性的名字", "属性的值")；
+        //获取属性值得方法getAttribute("属性的名字")；
+        //移除自定义属性removeAttribute("属性的名字")；
+
+
+        document.getElementById("btn").onclick = function () {
+
+            document.getElementsByTagName("div")[0].setAttribute("id", "content"); //设置属性           
+
+            document.getElementsByTagName("div")[0].removeAttribute("id");
+
+            var obj = document.getElementsByTagName("div")[0].getAttribute("id"); //获取属性的值
+
+            alert(obj);
+
+
+        }
+
+
+    </script>
+</body>
+</html>

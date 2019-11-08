@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>节点</title>
+</head>
+<body>
+    
+    <div id="dv">   
+        <p id="p1">11</p>
+        <span>22</span>
+        <ul>
+            <li>33</li>
+            <li>44</li>
+            <li>55</li>
+        </ul>
+    </div>
+
+
+
+    <script>
+
+        /*
+        文档 document
+        元素 html标签 element
+
+        节点（标签，属性，文本）
+        
+        节点的类型 nodeType
+        1-标签节点
+        2-属性节点
+        3-文本节点
+
+        节点的名字 nodeName
+        标签类型-大写的标签名字
+        属性类型-小写的属性名字
+        文本类型-#text
+
+        节点的值nodeValue
+        标签类型-null
+        属性类型-属性的值
+        文本类型-文本的内容       
+        
+        */
+
+        //获取p标签的父级节点
+
+        //var obj = document.getElementById("p1").parentNode;
+        //console.log("节点的类型："+obj.nodeType+"---节点的名字:"+obj.nodeName+"---节点的值:"+obj.nodeValue);
+
+        var obj = document.getElementById("dv").children;  //元素
+        console.log(obj);
+
+
+    </script>
+
+</body>
+</html>
