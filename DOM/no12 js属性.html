@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -29,18 +29,28 @@
         //移除自定义属性removeAttribute("属性的名字")；
 
 
-        document.getElementById("btn").onclick = function () {
+        // document.getElementById("btn").onclick = function () {
 
-            document.getElementsByTagName("div")[0].setAttribute("id", "content"); //设置属性           
+        //     document.getElementsByTagName("div")[0].setAttribute("id", "content"); //设置属性           
 
-            document.getElementsByTagName("div")[0].removeAttribute("id");
+        //     document.getElementsByTagName("div")[0].removeAttribute("id");
 
-            var obj = document.getElementsByTagName("div")[0].getAttribute("id"); //获取属性的值
+        //     var obj = document.getElementsByTagName("div")[0].getAttribute("id"); //获取属性的值
 
-            alert(obj);
+        //     alert(obj);
 
 
-        }
+        // }
+		
+			
+		document.getElementById("btn").onclick = function() {
+			document.getElementsByTagName("div")[1].setAttribute("id", "content");
+			document.getElementsByTagName("div")[0].setAttribute("class", "main");
+			document.getElementsByTagName("div")[0].removeAttribute("class");
+			var obj = document.getElementsByTagName("div")[0].getAttribute("class");
+			
+			alert(obj); 
+		}
 
 
     </script>

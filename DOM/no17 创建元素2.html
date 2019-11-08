@@ -1,42 +1,49 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>创建元素2</title>
-</head>
-<body>
-    <div id="dv1">
-        <p>11</p>
-        <span>22</span> 
-        <p>333</p>
-        <span>444</span>
-              
-    </div>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>创建元素2</title>
+	</head>
+	<body>
+		<div id="dv1">
+			<p>11</p>
+			<span>22</span>
+			<p>333</p>
+			<span>444</span>
 
-    <div id="dv2">
+		</div>
 
-    </div>
+		<div id="dv2">
 
-    <input type="button" value="点击" id="btn" />
+		</div>
 
-    <script>
-        //document.createElement("p")
+		<input type="button" value="点击" id="btn" />
 
-        //document.getElementById("btn").onclick = function () {
+		<script>
+			//document.createElement("p")
 
-        //    var obj = document.createElement("p");
-        //    document.getElementById("dv1").appendChild(obj);
+			//document.getElementById("btn").onclick = function () {
 
-        //}
+			//    var obj = document.createElement("p");
+			//    document.getElementById("dv1").appendChild(obj);
 
-        //删除元素
-        document.getElementById("btn").onclick = function () {
-            document.getElementById("dv1").removeChild(document.getElementById("dv1").lastElementChild);
+			//}
+
+			document.getElementById("btn").onclick = function() {
+				var obj = document.createElement('dd');
+				document.getElementById("dv1").appendChild(obj);
+			}
+
+			//删除元素
+			// document.getElementById("btn").onclick = function () {
+			//     document.getElementById("dv1").removeChild(document.getElementById("dv1").lastElementChild);
 
 
-        }
-       
+			// }
 
-    </script>
-</body>
+			document.getElementById("btn").onclick = function() {
+				document.getElementById("dv1").removeChild(document.getElementById("dv1").firstElementChild);
+			}
+		</script>
+	</body>
 </html>

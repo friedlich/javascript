@@ -1,12 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>节点</title>
-</head>
-<body>
-    
-    <div id="dv">   
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>节点</title>
+	</head>
+	<body>
+
+		<!--    <div id="dv">   
         <p id="p1">11</p>
         <span>22</span>
         <ul>
@@ -14,13 +14,23 @@
             <li>44</li>
             <li>55</li>
         </ul>
-    </div>
+    </div> -->
+
+		<div id="dv">
+			<p id="p1">11</p>
+			<span>22</span>
+			<ul>
+				<li>33</li>
+				<li>44</li>
+				<li>55</li>
+			</ul>
+
+		</div>
 
 
 
-    <script>
-
-        /*
+		<script>
+			/*
         文档 document
         元素 html标签 element
 
@@ -43,16 +53,23 @@
         
         */
 
-        //获取p标签的父级节点
+			//获取p标签的父级节点
 
-        //var obj = document.getElementById("p1").parentNode;
-        //console.log("节点的类型："+obj.nodeType+"---节点的名字:"+obj.nodeName+"---节点的值:"+obj.nodeValue);
+			//var obj = document.getElementById("p1").parentNode;
+			//console.log("节点的类型："+obj.nodeType+"---节点的名字:"+obj.nodeName+"---节点的值:"+obj.nodeValue);
 
-        var obj = document.getElementById("dv").children;  //元素
-        console.log(obj);
+			// var obj = document.getElementById("dv").children;  //元素
+			// console.log(obj);
+			
+			var obj = document.getElementById("p1").parentNode;
+			console.log(obj);
+			console.log("节点的类型: "+obj.nodeType+"节点的名字: "+obj.nodeName+"节点的值: "+obj.nodeValue); 
+			
+			var obj = document.getElementById("dv").childNodes;
+			console.log(obj);
+			var obj2 = document.getElementById("dv").children;
+			console.log(obj2);
+		</script>
 
-
-    </script>
-
-</body>
+	</body>
 </html>
