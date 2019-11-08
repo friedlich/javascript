@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title> switch case 语句</title>
+		<script>
+			// 如果 普通话等级是 一级甲等  说明分数在（97-100分之间）；
+			// 如果 普通话等级是 一级乙等  说明分数在（90-97分之间）；
+			// 如果 普通话等级是  二级甲等 说明分数在（85-90分之间）；
+			// 如果 普通话等级是  二级乙等 说明分数在（80-85分之间）；
+			// 不及格  低于80
+
+			var level = "二级乙等";
+			switch (level) {
+
+				case "一级甲等":
+					console.log("97-100");
+					break;
+				case "一级乙等":
+					console.log("90-97");
+					break;
+				case "二级甲等":
+					console.log("85-90");
+					break;
+				case "二级乙等":
+					console.log("80-85");
+					break;
+				default:
+					console.log("0-79");
+
+			}
+
+			var level = "二级甲等"
+			switch (level) {
+				case "一级甲等":
+				console.log("97-100");
+				break;
+				case "一级甲等":
+				console.log("90-97")
+				default:
+				console.log("就很一般般啦")
+				
+				
+			}
+		</script>
+	</head>
+	<body>
+
+
+
+
+
+	</body>
+</html>

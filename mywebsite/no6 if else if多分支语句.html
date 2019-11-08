@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> if else if多分支语句</title>
+    <script>
+
+        //比如薪资 二万以上 个人所得税  25%； （包括2万）
+        //薪资在一万五到二万之间  20%；  （包括一万五）
+        //薪资在一万到一万五  15%；  （包括1万）
+        //小于1万 无需缴费
+
+        var money = 15000;
+
+        if (money >= 20000) {
+            console.log("个人所的税 25%")
+        } else if (money>=15000) {  //15000 <= money < 20000  错误写法
+            console.log("个人所的税 20%")
+        } else if (money >= 10000) {
+            console.log("个人所的税 15%")
+        } else {
+            console.log("无需缴费")
+        }
+		
+		var money = 5000;
+		if (money >= 20000){
+			console.log("就很有钱啦")
+		}else if (money >= 10000){
+			console.log("就一般般有钱啦")
+		}else {
+			console.log("穷啊小老弟")
+		}
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+
+
+    1111
+	2222
+
+
+
+
+</body>
+</html>

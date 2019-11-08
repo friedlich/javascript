@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title> 函数的参数和返回值</title>
+		<script>
+			// function getSum(num1, num2) {
+
+			// 	//var num1 = 10;
+			// 	//var num2 = 30;
+
+			// 	var sum = num1 + num2; //计算
+			// 	//console.log(sum);      //输出
+			// 	return sum;
+			// }
+			// a = getSum(5, 7)
+			// console.log(a)
+
+
+			// var result = getSum(80, 20);
+			// console.log(result);
+
+			//求1-n相加
+
+			function getSum(n) {
+				var sum = 0;
+				for (var i = 1; i <= n; i++) {
+					sum += i;
+				}
+				return sum;
+			}
+
+			var result = getSum(5);
+			console.log(result);
+
+
+			function getAn(n) {
+				var sum = 0;
+				for (var i = 1; i <= n; i++) {
+					sum += i;
+				}
+				return sum;
+			}
+			var b = getAn(5)
+			console.log(b)
+
+
+			// 求两个数的最大值
+
+			function getMax(num1, num2) {
+				if (num1 < num2) {
+					return num2;
+				} else {
+					return num1;
+				}
+			}
+
+			var result = getMax(100, 555);
+			console.log(result);
+
+			function Max(n1, n2) {
+				if (n1 < n2) {
+					return n2;
+				} else {
+					return n1;
+				}
+			}
+			var res = Max(5,7);
+			console.log(res);		
+			
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

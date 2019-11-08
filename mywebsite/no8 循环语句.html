@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>循环语句</title>
+		<script>
+			//输出1-10
+
+			//var i = 1; //计数器
+			//while (i <= 10) {
+			//    console.log(i)
+			//    i++;
+			//}
+
+			//求1-100数字和
+
+			var i = 1;
+			var sum = 0;
+			while (i <= 100) {
+				if (i % 2 == 0) {
+					sum = sum + i;
+				}
+				i++;
+			}
+			console.log(sum)
+			//var i = 1;
+			//var sum = 0;
+			//while (i <= 100) {
+			//    sum = sum + i;   //sum=1  sum=3(1+2)  sum=6(1+2+3)
+			//    i++;
+			//}
+			//console.log(sum);
+
+			//1-100之间 所有偶数的和  能被2整除的数就叫偶数  %==0； 
+
+			//var i = 1;
+			//var sum = 0;
+			//while (i <= 100) {
+			//    if (i % 2 == 0) {
+			//        sum = sum + i;
+			//    }      
+			//    i++;
+			//}
+
+			//console.log(sum)
+
+
+			//使用do while  输出1-10
+
+			var i = 1;
+			do {
+				console.log(i);
+				i++
+			}
+			while (i <= 10)
+
+
+			//var i = 1;
+
+			//do {
+			//    console.log(i);
+			//    i++
+			//}
+			//while (i <= 10);
+
+			//1-100之间数字相加
+
+			var i = 1;
+			var sum = 0;
+			do {
+				sum = sum + i;
+				i++
+			}
+			while (i <= 100)
+			console.log(sum)
+
+			var i = 1;
+			var sum = 0;
+			do {
+				sum = sum + i;
+				i++
+			}
+			while (i <= 100);
+			console.log(sum)
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

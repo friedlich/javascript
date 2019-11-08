@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>自定义构造函数创建对象</title>
+		<script>
+			function Person(name, height) {
+
+				this.name = name;
+				this.height = height;
+				this.sayHi = function() {
+					console.log("大家好我是" + this.name + "我的身高是" + this.height);
+
+				}
+			}
+
+
+			var per1 = new Person("小明", 180);
+			per1.sayHi();
+
+			var per2 = new Person("张三", 190);
+			per2.sayHi();
+
+
+			function Phone(name, ram) {
+
+				this.name = name;
+				this.ram = ram;
+				this.say = function() {
+					console.log(name, ram)
+				}
+			}
+
+			var ph1 = new Phone("苹果", 32);
+			ph1.say();
+
+			var ph2 = new Phone("三星s9", 128);
+			ph2.say();
+
+
+			console.log(per1 instanceof Person);
+
+
+
+			function Subject(name, feel) {
+				this.name = name;
+				this.feel = feel;
+				this.say = function() {
+					console.log(name, feel)
+				}
+			}
+
+				var sub1 = new Subject("数学", "超难");
+				sub1.say();
+				var sub2 = new Subject("英语", "超烦");
+				sub2.say();
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

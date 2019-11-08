@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> 字面量形式创建对象</title>
+    <script>
+
+        //字面量创建数组
+
+        // var arr = [10, 20, 30, 40];
+
+        var obj = {
+            name: "小明",
+            age: 18,
+            height: 170,
+            sayHi: function () {
+                console.log("我是" + this.name + "我的年龄是" + this.age + "我的身高是" + this.height);
+            }
+
+        };
+        //obj.sayHi();
+        console.log(obj.name);
+        console.log(obj["age"]);   //也可以获取到属性的值
+        obj["sayHi"]();  //要想使用括号的形式必须加双引号
+
+
+
+
+		var obj1 = {
+			name: "小红",
+			age: 18,
+			height: 165,
+			sayhi: function() {
+				console.log("我是" + this.name + "我的年龄是" + this.age + "我的身高是" + this.height)
+			},
+		}
+			
+		console.log(obj1.name);
+		console.log(obj["age"]);
+		obj1["sayhi"]();
+		
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

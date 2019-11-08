@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title> 内置对象（String）</title>
+		<script>
+			var str = "Hello Word";
+			for (var i = 0; i < str.length; i++) {
+				// console.log(str[i]);
+
+			}
+
+			// console.log(str[0]);
+			// str[0] = M;
+			// console.log(str[0]); //不可变性
+
+			// var str = "   Hello  Word    ";
+			// console.log(str.trim()); //去掉空格
+
+			var str1 = "HELLO WORD";
+			// console.log(str1.toLocaleLowerCase()); //大写转小写
+			console.log(str1.toLocaleLowerCase())
+
+			var str2 = "hello word";
+			// console.log(str2.toLocaleUpperCase()); //小写字母转成大写字母
+			console.log(str2.toLocaleUpperCase())
+
+
+			var str3 = "语文-数学-英语-物理-化学";
+			var arr = str3.split("-");
+			console.log(arr)
+			for (var i = 0; i < arr.length; i++) {
+				console.log(arr[i])
+			}
+			//       for (var i = 0; i < arr.length; i++) {
+			//          console.log(arr[i]);
+			//       }
+
+			var str4 = "Hello Word";
+			console.log(str4.slice(2, 5)); //提取字符串，从2开始 到5的前一个结束。
+			console.log(str4.slice(1,4))
+
+			var str5 = "Wello Word";
+			console.log(str5.indexOf("o", 6)); //查找字符串如果存在返回索引，不存在返回-1
+			console.log(str5.indexOf("r"))
+
+			console.log(str5.lastIndexOf("W")) //从右往左找字符串，但是索引还是从左往右
+			console.log(str5.lastIndexOf("o"))
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

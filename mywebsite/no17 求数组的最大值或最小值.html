@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>求数组的最大值或最小值</title>
+
+		<script>
+			function arrMax(arr) {
+				max = arr[0]; //假设第一个数为最大值
+				for (var i = 0; i < arr.length; i++) {
+
+					if (max < arr[i]) {
+						max = arr[i];
+					}
+
+				}
+				return max;
+			}
+
+			var result = arrMax([10, 20, 90, 70]);
+			console.log(result);
+
+
+
+			function arrMin(arr) {
+				min = arr[0];
+				for (var i = 0; i < arr.length; i++) {
+					if (min > arr[i]) {
+						min = arr[i];
+					}
+				}
+				return min; // return的位置要放对了,确保for循环已经结束了
+
+			}
+			res = arrMin([7, 2, 3]);
+			console.log(res);
+
+			//求一个数组所有元素的和
+
+			function arrSum(arr) {
+				var sum = 0;
+				for (var i = 0; i < arr.length; i++) {
+					sum += arr[i];
+				}
+				return sum;
+			}
+
+			console.log(arrSum([10, 20, 30, 40, 50]));
+
+			//方法 argumens.length  
+
+			function nums() {
+				console.log(arguments.length);
+			}
+
+			nums(10, 20, 30, 40);
+
+			function num() {
+				console.log(arguments.length);
+			}
+
+			num(1, 2, 3)
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

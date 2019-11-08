@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>冒泡排序</title>
+		<script>
+			// var arr = [20, 10, 50, 40, 30]; //10 20 30 40 50
+			// console.log(arr)
+			// for (var i = 0; i < arr.length - 1; i++) {
+			// 	for (var k = 0; k < arr.length - 1 - i; k++) {
+
+			// 		if (arr[k] > arr[k + 1]) {
+			// 			var temp;
+			// 			temp = arr[k];
+			// 			arr[k] = arr[k + 1];
+			// 			arr[k + 1] = temp;
+			// 		}
+			// 	}
+			// }
+			// console.log(arr);
+
+
+
+
+
+			arr = [20, 10, 50, 40, 30];
+			console.log(arr);
+			var temp;
+			for (var i = 0; i < arr.length - 1; i++) {
+				if (arr[i] > arr[i + 1]) {
+					temp = arr[i];
+					arr[i] = arr[i + 1];
+					arr[i + 1] = temp;
+				}
+			}
+			console.log(arr)
+
+			arr = [20, 10, 50, 40, 30];
+			console.log(arr);
+			var temp;
+			for (var i = 0; i < arr.length - 1; i++) {
+				for (var k = 0; k < arr.length - 1 - i; k++) {
+					if (arr[k] > arr[k + 1]) {
+						temp = arr[k];
+						arr[k] = arr[k + 1];
+						arr[k + 1] = temp;
+					}
+				}
+			} 
+			// 它这个思想是先确定最大值的位置,说实话对我而言有点难想
+			// 但是这个似乎又是真正的编程思想,因为是大于号么,所以肯定是先确定最大值啦
+			// 所以事实上它就是从前往后一一对比,先确定最大的那一个值,然后找第二大的值,就是这样
+			console.log(arr)
+			
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

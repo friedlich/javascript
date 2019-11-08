@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>匿名函数</title>
+		<script>
+			var sayHi = function() {
+				console.log("Hello Word");
+			}
+			sayHi();
+
+			//作用域：代码的使用范围  
+			//全局作用域
+			//局部作用域
+
+			//全局变量
+			//局部变量
+
+			//var num = 100;
+
+			//var sayHi = function () {
+			//    console.log("Hello Word");
+			//}
+			//sayHi();
+
+			//console.log(num);
+
+
+			//function f1() {
+			//    var num1 = 200; //局部变量
+
+			//}
+			//console.log(num1);
+
+			//隐式全局变量
+
+			function f1() {
+				num = 100; //隐式全局变量
+				console.log(num);
+
+			}
+
+			f1();
+
+
+			var sayli = function() {
+				console.log("Hello! Mr Li");
+			}
+			sayli();
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

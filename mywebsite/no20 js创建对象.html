@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title> js创建对象</title>
+		<script>
+			//第一种方式使用构造函数创建对象
+
+			// var person = new Object();
+			// person.name = "小明";
+			// person.sex = "男"
+			// person.height = 180;
+			// person.weight = 70;
+
+			// person.sayHi = function() {
+			// 	console.log("Hello")
+
+			// }
+			// console.log(person.name);
+			// person.sayHi();
+
+			// var person1 = new Object()
+			// person1.name = "小红";
+			// person1.sex = "女";
+			// person1.height = 165;
+			// person1.weight = 50;
+
+			// person1.sayHi = function() {
+			// 	console.log("angry")
+			// }
+			// console.log(person1.name);
+			// person1.sayHi();
+
+
+			function persons(name, height) {
+
+				var person = new Object();
+				person.name = name;
+				person.height = height;
+
+				person.sayHi = function() {
+
+					console.log("大家好，我是：" + this.name + "---" + "我的身高是:" + this.height); //当前函数方法使用当前对象的值可以使用 this
+
+				}
+				return person;
+			}
+
+
+			var per1 = persons("小明", 180);
+			per1.sayHi();
+
+			var per2 = persons("小红", 165);
+			per2.sayHi();
+
+			function fruits(name, tasty) {
+				var fruit = new Object;
+				fruit.name = name;
+				fruit.tasty = tasty;
+
+				fruit.sayself = function() {
+					console.log("大家好，我是" + this.name + "。我的风味是" + this.tasty)
+				}
+				return fruit;
+			}
+			
+			var apple = fruits("苹果", "甘甜");
+			apple.sayself();
+			var orange = fruits("橘子", "酸甜");
+			orange.sayself();
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

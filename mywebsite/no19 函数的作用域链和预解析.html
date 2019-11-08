@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>函数的作用域链和预解析</title>
+    <script>
+        function f1() { //0级作用域
+           num = 10;
+           function f2() {//1级作用域
+               num = 20;
+               function f3() {//2级作用域
+                   num1 = 30;
+                   function f4() {//3级作用域
+                       num1 = 40;
+                       console.log(num)
+                   }
+                   f4();
+               }
+               f3();
+           }
+           f2();
+        }
+
+        f1();
+
+        //函数的执行过程
+        //从里往外执行
+
+
+        //预解析
+       
+		sayHi();
+		
+        function sayHi() {
+
+           console.log("Hello");
+
+        }
+               
+        console.log(num2);
+        var num2 = 100;
+		
+		var num3;
+		console.log(num3)
+		
+		var num4 = 4;
+		console.log(num4)
+       
+
+       
+    
+
+       
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>for循环</title>
+		<script>
+			//输出1-10
+
+			for (var i = 1; i <= 10; i++) {
+				console.log(i)
+			}
+
+			//for (var i = 1; i <= 10; i++) {
+			//    console.log(i);
+			//}
+
+			//求1-100数字相加的和
+			{}
+			var sum = 0;
+			for (var i = 1; i <= 100; i++) {
+				sum += i
+			}
+			console.log(sum)
+
+			//var sum = 0;
+			//for (var i = 1; i <= 100; i++) {
+			//   sum+=i  //sum=sum+i
+			//}
+			//console.log(sum)
+
+
+			//求1-100偶数的和
+
+			var sum = 0;
+			for (var i = 1; i <= 100; i++) {
+				if (i % 2 == 0) {
+					sum += i
+				}
+			}
+			console.log(sum)
+
+
+			//var sum = 0;
+			//for (var i = 1; i <= 100; i++) {
+			//    if (i % 2 == 0) {
+			//        sum += i;
+			//    }
+			//}
+			//console.log(sum);
+
+			//var i = 1;
+			//while (i <= 10) {
+
+			//    console.log("Hello Word")
+			//    continue;  //死循环
+			//    i++;
+
+			//}
+
+			//求1-100之间所有奇数的和
+
+			var sum = 0;
+			var i = 1;
+			while (i <= 100) {
+				if (i % 2 == 0) {
+					i++;
+					continue;
+				}
+				sum = sum + 1;
+				i++;
+			}
+
+
+			//var sum = 0;
+			//var i = 1;
+			//while (i <= 100) {
+			//    if (i % 2 == 0) {
+			//        i++;
+			//        continue;
+			//    }
+			//    sum = sum + i;
+			//    i++;
+			//}
+
+			//console.log(sum);
+
+
+			//break
+
+			while (true) {
+				console.log("1");
+				break;
+			}
+
+			//while (true) {
+
+			//    console.log("1");
+			//    break;
+
+			//}
+
+			//1-10之间第一个偶数
+
+			for (var i = 1; i <= 10; i++) {
+				if (i % 2 == 0) {
+					console.log(i);
+					break;
+				}
+
+			}
+
+			for (var i = 1; i <= 10; i++) {
+				if (i % 4 == 0){
+					console.log(i);
+					break;
+				}
+			}
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

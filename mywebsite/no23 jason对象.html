@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>jason对象</title>
+
+    <script>
+
+
+        var obj = {
+            name: "小明",
+            age: 18,
+            height: 170,
+            sayHi: function () {
+                console.log("我是" + this.name + "我的年龄是" + this.age + "我的身高是" + this.height);
+            }
+        };
+
+
+
+        //jason对象第一个特点是成对出现
+        //属性和值要用双引号括起来
+        //jasons是无序的不能使用for循环来遍历对象
+
+
+        var jason = {
+
+            "age": "18",
+            "name": "小明",            
+            "height": "170"
+
+        };
+
+        //console.log(jason.name);
+        //console.log(jason["age"]);
+
+        //var key = "height";
+        //console.log(jason[key]);
+
+
+        //遍历jason对象
+        for (var key in jason) {
+
+            //console.log(key);
+
+            //console.log(jason[key]);
+
+            console.log(key + "---" + jason[key]);
+
+        }
+		
+		var jason2 = {
+			"name": "小强",
+			"where": "深圳",
+			"height": "175"
+		};
+		
+		for (var key in jason2){
+			console.log(key + "---" + jason2[key]);
+		}
+
+
+
+
+
+
+
+
+        //for（var i=0;i<arr.leght;i++）{
+        //    arr[i]       
+        
+        
+        //}
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

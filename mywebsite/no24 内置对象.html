@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title> 内置对象</title>
+		<script>
+			console.log(Math.PI);
+			console.log(Math.max(10, 20, 50, 40, 90, 45)); //求一组数据的最大值
+			console.log(Math.min(10, 20, 50, 40, 90, 45)); //求一组数据的最小值
+			console.log(Math.abs(-11)); //求绝对值
+
+			//自己写一个 对象 求一组数据的最大值
+
+			function GetMax() {
+				this.getmax = function() {
+
+					var max = arguments[0];
+					for (var i = 0; i < arguments.length; i++) {
+						if (max < arguments[i]) {
+							max = arguments[i];
+						}
+					}
+					return max
+				}
+			}
+
+
+			var getMax = new GetMax();
+			var resule = getMax.getmax(10, 52, 41, 85, 99);
+			console.log(resule);
+
+			//自己写一个 对象 求一组数据的最小值
+			function GetMin() {
+				this.getmin = function() {
+
+					var min = arguments[0];
+					for (var i = 0; i < arguments.length; i++){
+						if (min > arguments[i]){
+							min = arguments[i];
+						}
+					}
+					return min;
+				}	
+			}
+			
+			var getMin = new GetMin();
+			var result = getMin.getmin(10, 52, 41, 85, 99);
+			console.log(result);
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
