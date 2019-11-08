@@ -1,32 +1,41 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>焦点事件</title>
-</head>
-<body style="text-align :center ;padding-top :100px;">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>焦点事件</title>
+	</head>
+	<body style="text-align :center ;padding-top :100px;">
 
-    <input type="text"  value="请输入内容" id="t1" />
-
-
-    <script>
-        // document.getElementById("t1").onfocus = function () {   //onfocus获取鼠标焦点事件
-
-        //     if (this.value == "请输入内容") {
-        //         this.value = "";
-        //     }            
-        // }
-        // document.getElementById("t1").onblur = function () {
-
-        //     if (this.value == "") {
-        //         this.value = "请输入内容";
-        //     }            
-
-        // }
+		<input type="text" value="请输入内容" id="t1" />
 
 
-    </script>
+		<script>
+			// document.getElementById("t1").onfocus = function () {   //onfocus获取鼠标焦点事件
+
+			//     if (this.value == "请输入内容") {
+			//         this.value = "";
+			//     }            
+			// }
+			// document.getElementById("t1").onblur = function () {
+
+			//     if (this.value == "") {
+			//         this.value = "请输入内容";
+			//     }            
+
+			// }
+
+			document.getElementById("t1").onfocus = function() {  //onfocus获取鼠标焦点事件
+				if (this.value == "请输入内容") {
+					this.value = "";
+				}
+			}
+			document.getElementById("t1").onblur = function() {
+				if (this.value == "") {
+					this.value = "请输入内容";
+				}
+			}
+		</script>
 
 
-</body>
+	</body>
 </html>
