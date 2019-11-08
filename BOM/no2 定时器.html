@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>定时器</title>
+</head>
+<body>
+    
+    <input type="button" value="停止计时器" id="btn" />
+
+    <script>
+        //第一种 循环使用的计时器
+
+        //var time = setInterval(function () {
+        //    alert("一秒一次")
+        //}, 3000);
+
+        //document.getElementById("btn").onclick = function () {
+        //    window.clearInterval(time)
+        //}
+
+
+
+        //第二种计时器  一次性计时器
+        var time = setTimeout(function () {
+            alert("一秒一次")
+        }, 5000);
+
+        document.getElementById("btn").onclick = function () {
+            window.clearTimeout(time);
+
+        }
+
+
+    </script>
+
+</body>
+</html>

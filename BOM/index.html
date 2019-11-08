@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>BOM概念</title>
+
+    <script>
+
+        //window.onload = function () {
+        //    document.getElementById("btn").onclick = function () {
+        //        alert("js最后一大模块");
+        //    }
+        //}       
+
+
+    </script>
+
+</head>
+<body>
+
+    <div>
+        <p>Hello</p>
+    </div>
+
+
+    <input type="button" value="点击" id="btn" />
+
+
+    <script>
+        console.log(window.location);
+        console.log(window.location.host);
+        console.log(window.location.port);
+        console.log(window.location.pathname);
+        
+        document.getElementById("btn").onclick = function () {
+
+            //window.location.href = "http://www.baidu.com"; //使用属性页面跳转
+
+            //window.location.assign("http://www.baidu.com"); //使用方法进行页面跳转
+
+            //window.location.replace("http://www.baidu.com");
+
+            window.location.reload();
+           
+
+        }
+
+    </script>
+
+</body>
+</html>

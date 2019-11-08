@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>111</title>
+</head>
+<body>
+
+    <input type="button" value="确定（10）" id="btn" disabled="disabled"/>
+
+    <script>
+        var time = 10;
+        var objTime = setInterval(
+            function () {
+                time--;
+                document.getElementById("btn").value = "确定（" + time + "）";
+                if (time <= 0) {
+                    clearInterval(objTime);
+                    document.getElementById("btn").value = "确定";
+                    document.getElementById("btn").disabled = false;
+                }
+            },1000
+
+
+            )
+
+
+    </script>
+
+
+
+</body>
+
+
+
+</html>

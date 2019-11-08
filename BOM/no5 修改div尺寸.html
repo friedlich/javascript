@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>修改div尺寸</title>
+    <style>
+
+
+        #dv{width :400px;height :400px;background :red;margin :0 auto ;}
+    </style>
+</head>
+<body>
+    <div id="dv">
+
+
+    </div>
+    <input type="button" value="确定" id="btn" />
+
+
+
+    <script>
+        document.getElementById("btn").onclick = function () {
+
+            var width = 400;
+            var height = 400;
+            var time = setInterval(
+                function () {
+                    width = width + 10;
+                    
+                    if (width == 500) {
+                        clearInterval(time)
+                    }
+
+                    height = height + 10;
+                   
+
+
+
+                    document.getElementById("dv").style.width = width + "px";
+                    document.getElementById("dv").style.height = height + "px";
+
+                },500
+
+                )
+
+        }
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>history对象</title>
+</head>
+<body>
+    <input type="button" value="页面跳转到百度" id="btn1" />
+
+    <input type="button" value="通过历史记录跳转百度" id="btn2"/>
+
+
+    <script>
+        document.getElementById("btn1").onclick = function () {
+            window.location.href="http://www.baidu.com"
+        }
+
+        document.getElementById("btn2").onclick = function () {
+
+            window.history.forward();
+
+        }
+
+        console.log(window.navigator.userAgent); //获取浏览器信息
+
+
+
+    </script>
+
+
+</body>
+</html>
