@@ -5,7 +5,7 @@
 		<title>创建元素</title>
 		<style>
 			ul{margin :0px;padding :0px;list-style-type:none;}
-        ul li{line-height:40px;} // 这是给了一个行间距
+			ul li{line-height:40px;}   // 这是给了一个行间距
 
     </style>
 	</head>
@@ -68,9 +68,9 @@
 
 			var arr = ["新闻标题1", "新闻标题2", "新闻标题3", "新闻标题4", "新闻标题5", "新闻标题6"];
 
-			document.getElementById("btn").onclick = function () {
+			document.getElementById("btn").onclick = function() {
 				var str = "<ul>";
-				for (var i = 0; i < arr.length; i++){
+				for (var i = 0; i < arr.length; i++) {
 					str = str + "<li>" + arr[i] + "<li>";
 				}
 				str = str + "</ul>";

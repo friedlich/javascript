@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -20,17 +20,32 @@
         //}
 
 
-
         //第二种计时器  一次性计时器
-        var time = setTimeout(function () {
-            alert("一秒一次")
-        }, 5000);
+        // var time = setTimeout(function () {
+        //     alert("一秒一次")
+        // }, 5000);
 
-        document.getElementById("btn").onclick = function () {
-            window.clearTimeout(time);
+        // document.getElementById("btn").onclick = function () {
+        //     window.clearTimeout(time);
 
-        }
+        // }
+		
+		
+		// var time = setInterval(function() {
+		// 	alert("三秒一次")
+		// }, 3000)
+		
+		// document.getElementById("btn").onclick = function () {
+		// 	window.clearInterval(time);
+		// }
 
+		var time = setTimeout(function(){
+			alert("五秒一次")
+		}, 5000)
+		
+		document.getElementById("btn").onclick = function () {
+			window.clearTimeout(time);
+		}
 
     </script>
 
