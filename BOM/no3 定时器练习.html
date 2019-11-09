@@ -1,43 +1,53 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>定时器练习</title>
-</head>
-<body>
-    协议
-    协议
-    协议
-    协议
-    协议
-    协议
-    协议
-    协议
-    协议
-    协议
-    <br />
-   <input type="button" value="下一步（10）" id="btn"  disabled="disabled"/>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>定时器练习</title>
+	</head>
+	<body>
+		协议
+		协议
+		协议
+		协议
+		协议
+		协议
+		协议
+		协议
+		协议
+		协议
+		<br />
+		<!-- <input type="button" value="下一步（10）" id="btn"  disabled="disabled"/> -->
+		<input type="button" value="下一步(10)" id="btn" disabled="disabled" />
 
 
 
-    <script>
-        var num = 10;
-        var time = setInterval(
-            function () {                
-                num--;
-                document.getElementById("btn").value = "下一步（" + num + "）";
-                if (num <= 0) {
-                    clearInterval(time);
-                    document.getElementById("btn").disabled = false;
-                    document.getElementById("btn").value = "下一步"
-                }
-            },1000
+		<script>
+			// var num = 10;
+			// var time = setInterval(
+			//     function () {                
+			//         num--;
+			//         document.getElementById("btn").value = "下一步（" + num + "）";
+			//         if (num <= 0) {
+			//             clearInterval(time);
+			//             document.getElementById("btn").disabled = false;
+			//             document.getElementById("btn").value = "下一步"
+			//         }
+			//     },1000
 
-            )
+			//     )
 
-
-
-
-    </script>
-</body>
+			var num = 10;
+			var time = setInterval(
+					function() {
+						num--;
+						document.getElementById("btn").value = "下一步 (" + num + ")";
+						if (num <= 0) {
+							clearInterval(time);
+							document.getElementById("btn").disabled = false;
+							document.getElementById("btn").value = "下一步";							
+						}
+					}, 1000
+					)
+		</script>
+	</body>
 </html>

@@ -1,32 +1,30 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>client属性</title>
-    <style>
-        #dv{width:200px;height :300px;background:red;margin-left:40px;border-left:50px solid #000;border-top:50px solid #ff6a00}
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>client属性</title>
+		<style>
+			#dv{width:200px;height :300px;background:red;margin-left:40px;border-left:60px solid #000;border-top:50px solid #ff6a00}
     </style>
-</head>
-<body>
+	</head>
+	<body>
 
-    <div id="dv">
-
-
-
-    </div>
-    <input type="button" value="确认" id="btn" />
+		<div id="dv">
 
 
-    <script>
-        document.getElementById("btn").onclick = function () {
-            console.log(document.getElementById("dv").clientWidth);
-            console.log(document.getElementById("dv").clientHeight);
-            console.log(document.getElementById("dv").clientLeft);
-            console.log(document.getElementById("dv").clientTop);
 
-        }
+		</div>
+		<input type="button" value="确认" id="btn" />
 
 
-    </script>
-</body>
+		<script>
+			document.getElementById("btn").onclick = function() {
+				console.log(document.getElementById("dv").clientWidth);
+				console.log(document.getElementById("dv").clientHeight);
+				console.log(document.getElementById("dv").clientLeft);
+				console.log(document.getElementById("dv").clientTop);
+
+			}
+		</script>
+	</body>
 </html>

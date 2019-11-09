@@ -1,41 +1,63 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>div渐变</title>
-    <style>
-        #dv{width:500px;height :500px;background:red;margin :0 auto ;}
-
-
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>div渐变</title>
+		<style>
+			#dv{width:500px;height :500px;background:red;margin :0 auto ;}
     </style>
-</head>
-<body>
+	</head>
+	<body>
 
-    <div id="dv">
+		<div id="dv">
 
-    </div>
-    <input type="button" value="确认" id="btn" />
+		</div>
+		<input type="button" value="确认" id="btn" />
+		<input type="button" value="重复" id="btn2" />
 
-    <script>
-        document.getElementById("btn").onclick = function () {
+		<script>
+			// document.getElementById("btn").onclick = function () {
 
-            var opacity = 10;           
-            var time = setInterval(
-                function () {
-                    opacity--
-                    if (opacity <= 0) {
-                        clearInterval(time);
-                    }
+			//     var opacity = 10;           
+			//     var time = setInterval(
+			//         function () {
+			//             opacity--
+			//             if (opacity <= 0) {
+			//                 clearInterval(time);
+			//             }
 
-                    document.getElementById("dv").style.opacity = opacity / 10;
-                   
-                },1000
-               
-                )
-        }
+			//             document.getElementById("dv").style.opacity = opacity / 10;
 
+			//         },1000
 
+			//         )
+			// }
 
-    </script>
-</body>
+			document.getElementById("btn").onclick = function() {
+				var opacity = 10;
+				var time = setInterval(
+					function() {
+						opacity--;
+						if (opacity <= 0) {
+							clearInterval(time);
+						}
+						document.getElementById("dv").style.opacity = opacity / 10;
+					}, 1000
+				)
+			}
+				
+			document.getElementById("btn2").onclick = function () {
+				var opacity = 10;
+				var time = setInterval(
+					function () {
+						opacity--;
+						if (opacity <= 0) {
+							clearInterval(time);
+						}
+						document.getElementById("dv").style.opacity = opacity/10;
+					}, 1000
+				)
+			}
+		</script>
+	</body>
 </html>

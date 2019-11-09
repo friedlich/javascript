@@ -1,47 +1,84 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>固定导航条</title>
-    <style>
-        body{margin :0px;padding :0px;}
-        .head{width :100%;height :120px;background:#808080} 
-        .menu{width :100%;height :40px;background :red}
-        .mian{width :100%;height :2000px;background:#000}
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>固定导航条</title>
+		<style>
+			body {
+				margin: 0px;
+				padding: 0px;
+			}
 
-        .a1{position:fixed;top:0px;}
+			.head {
+				width: 100%;
+				height: 120px;
+				background: #808080
+			}
 
-    </style>
-</head>
-<body>
-    <div class="head" id="dv1"></div>
-    <div class="menu" id="dv2"></div>
-    <div class="mian" id="dv3">
-        <img src="images/a1.jpg" style="margin :0 auto ;display :block;"/>
+			.menu {
+				width: 100%;
+				height: 40px;
+				background: red
+			}
 
-    </div>
+			.mian {
+				width: 100%;
+				height: 2000px;
+				background: #000
+			}
 
+			.a1 {
+				position: fixed;
+				top: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="head" id="dv1"></div>
+		<div class="menu" id="dv2"></div>
+		<div class="mian" id="dv3">
+			<img src="images/a1.jpg" style="margin :0 auto ;display :block;" />
 
-    <script>
-        window.onscroll = function () {
-            if (document.documentElement.scrollTop >= document.getElementById("dv1").offsetHeight) {
-                document.getElementById("dv2").className = "menu a1"
-                document.getElementById("dv3").style.marginTop="40px"
-
-
-            }
-            else {
-                document.getElementById("dv2").className = "menu"
-                document.getElementById("dv3").style.marginTop = "0px"
-
-            }
-
-
-        }
+		</div>
 
 
+		<script>
+			// window.onscroll = function() {
+			// 	if (document.documentElement.scrollTop >= document.getElementById("dv1").offsetHeight) {
+			// 		document.getElementById("dv2").className = "menu a1"
+			// 		document.getElementById("dv3").style.marginTop = "40px"
 
-    </script>
 
-</body>
+			// 	} else {
+			// 		document.getElementById("dv2").className = "menu"
+			// 		document.getElementById("dv3").style.marginTop = "0px"
+
+			// 	}
+
+
+			// }
+
+
+			// window.onscroll = function() {
+			// 	if (document.documentElement.scrollTop >= document.getElementById("dv1").offsetHeight) {
+			// 		document.getElementById("dv2").className = "menu a1"
+			// 		document.getElementById("dv3").style.marginTop = "40px";
+			// 	} else {
+			// 		document.getElementById("dv2").classname = "menu"
+			// 	}
+			// }
+
+
+
+			window.onscroll = function() {
+				if (document.documentElement.scrollTop >= document.getElementById("dv1").offsetHeight) {
+					document.getElementById("dv2").className = "menu a1";
+					document.getElementById("dv3").style.marginTop = "40px";
+				} else {
+					document.getElementById("dv3").style.marginTop = "0px"
+				}
+			}
+		</script>
+
+	</body>
 </html>
